@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  position: relative;
 }
 
 body {
@@ -9,7 +10,6 @@ body {
   font-weight: 400;
   font-style: normal;
   color: #464646;
-  margin: 5px 0;
   letter-spacing: 0.5px;
 }
 
@@ -43,10 +43,19 @@ button {
   padding: 3px 25px;
   border-radius: 3px;
   font-weight: 600;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
 }
 
 .flex {
   display: flex;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .space-between {
@@ -89,6 +98,10 @@ button {
   color: #FFFFFF
 }
 
+.text-center {
+  text-align: center;
+}
+
 nav {
   display: flex;
   gap: 50px;
@@ -97,7 +110,7 @@ nav {
 nav a {
   font-weight: 500;
   cursor: pointer;
-  animation: hover 1s ease;
+  transition: color 0.5s ease;
 }
 
 nav a:hover {
@@ -112,10 +125,12 @@ nav a:hover {
 .hero {
   min-height: 800px;
   gap: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .hero img {
-  width: 500px;
+  width: 100%;
 }
 
 .mb {
@@ -124,4 +139,75 @@ nav a:hover {
 
 #intro {
   width: 600px;
+}
+
+#portfolio {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.images-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 5px;
+  column-gap: 10px;
+}
+
+.images-grid img {
+  border-radius: 5px;
+}
+
+.portfolio-item {
+  cursor: pointer;
+}
+
+.resume-item {
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.portfolio-item .description {
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+  right: 40px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.portfolio-item:hover .description {
+  opacity: 1;
+}
+
+.contact-form {
+  width: 700px;
+  margin: 30px auto;
+  min-height: 100px;
+  border-radius: 10px;
+}
+
+.contact-form label, .contact-form input, .contact-form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+  outline: none;
+  border-radius: 3px;
+  border: none;
+}
+
+.contact-form input {
+  height: 40px;
+  padding: 0 10px;
+}
+
+.contact-form textarea {
+  height: 130px;
+  padding: 0 10px;
 }
