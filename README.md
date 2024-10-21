@@ -27,12 +27,12 @@ To view or edit the portfolio locally:
 
 1. **Clone the repository:**
 ```bash
-  git clone <repository-url>
+  git clone https://github.com/kenovienadu/gmc_portfolio_1
 ```
 
 2. **Navigate into the project directory:**
 ```bash
-  cd your-portfolio-repo
+  cd gmc_portfolio_1
 ```
 
 3. **Serve the static project (requires npm and node installed):**
