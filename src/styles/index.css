@@ -111,6 +111,8 @@ nav a {
   font-weight: 500;
   cursor: pointer;
   transition: color 0.5s ease;
+  color: #464646;
+  text-decoration: none;
 }
 
 nav a:hover {
