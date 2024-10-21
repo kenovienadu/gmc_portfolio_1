@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Simple Portfolio</title>
-
+  <!-- Main CSS Import -->
+  <link rel="stylesheet" href="styles/index.css">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,9 +13,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
+  <header class="flex space-between section-padding bg-light" >
     <div>
-      <span>Ken</span>
+      <span class="logo-name">Ken Ovienadu</span>
     </div>
     <nav>
       <a>Home</a>
@@ -24,5 +25,26 @@
       <a>Contact</a>
     </nav>
   </header>
+
+  <section class="flex hero bg-light section-padding align-center">
+    <div id="intro" >
+      <h2 class="text-secondary mb" >Hi There, I'm Ken</h2>
+      <h1 class="mb">Software Engineer</h1>
+      <p class="mb">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi eum sit culpa provident 
+        soluta iste velit pariatur numquam nobis recusandae! Dolore odit cum sequi 
+        reprehenderit incidunt velit voluptatibus consequuntur ipsam!
+      </p>
+
+      <div>
+        <button class="bg-secondary text-white" >Learn More</button>
+      </div>
+    </div>
+
+    <div>
+      <!-- would hold the image -->
+       <img src="https://placehold.co/600x400" alt="">
+    </div>
+  </section>
 </body>
 </html>

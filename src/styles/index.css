@@ -1,0 +1,127 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #464646;
+  margin: 5px 0;
+  letter-spacing: 0.5px;
+}
+
+p {
+  line-height: 28px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 60px;
+}
+
+h2 {
+  font-weight: 600;
+}
+
+h4 {
+  font-weight: 500;
+}
+
+button {
+  border: none;
+  height: 45px;
+  padding: 3px 25px;
+  border-radius: 3px;
+  font-weight: 600;
+}
+
+.flex {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.section-padding {
+  padding: 30px 80px;
+}
+
+.bg-primary {
+  background-color: #464646;
+}
+
+.bg-secondary {
+  background-color: #FF5252;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.bg-light {
+  background-color: #fff8f8;
+}
+
+.text-secondary {
+  color: #FF5252
+}
+
+.text-primary {
+  color: #464646;
+}
+
+.text-white {
+  color: #FFFFFF
+}
+
+nav {
+  display: flex;
+  gap: 50px;
+}
+
+nav a {
+  font-weight: 500;
+  cursor: pointer;
+  animation: hover 1s ease;
+}
+
+nav a:hover {
+  color: #FF5252;
+}
+
+.logo-name {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.hero {
+  min-height: 800px;
+  gap: 50px;
+}
+
+.hero img {
+  width: 500px;
+}
+
+.mb {
+  margin-bottom: 20px;
+}
+
+#intro {
+  width: 600px;
+}
